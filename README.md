@@ -12,7 +12,7 @@ cd ../homepage && pnpm i
 ## Start
 
 ```shell
-cd blog && pnpm dev
+cd blog && pnpm build:sub && pnpm serve:sub
 ```
 
 ```shell

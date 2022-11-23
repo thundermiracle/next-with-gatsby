@@ -14,6 +14,7 @@
     "gatsby-plugin-feed": "^5.0.0",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-plugin-output": "^0.1.3",
     "gatsby-plugin-pnpm": "^1.2.10",
     "gatsby-plugin-sharp": "^5.0.0",
     "gatsby-remark-images": "^7.0.0",
@@ -44,6 +45,9 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
+    "build:sub": "PREFIX_PATHS=true gatsby build",
+    "serve:sub": "PREFIX_PATHS=true gatsby serve -H 0.0.0.0",
+    "build:vercel": "OUTPUT_DIR=dist/blog PREFIX_PATHS=true gatsby build",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
